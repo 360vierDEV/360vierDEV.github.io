@@ -1,0 +1,9 @@
+## Phpstorm
+.idea/
+
+## Mac
+.DS_Store
+
+## DEV
+node_modules/
+package.json
