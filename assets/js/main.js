@@ -1,5 +1,5 @@
 (function($) {
-    // Ankernav
+    console.log('%c © 360VIER GmbH ', 'color: #fff; background-color: #81ba49;');
 
     function initAnkernav() {
         $(document).ready(function() {
@@ -14,13 +14,13 @@
 
             $(document).on('click', '#ankernav a[href*="#"]', function() {
                 if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
-                    var targetOffset = -200
-                    var target = $(this.hash)
-                    var scrollTop = $(window).scrollTop()
-                    target = target.length ? target : $('[name="' + this.hash.slice(1) + '"]')
+                    var targetOffset = -200;
+                    var target = $(this.hash);
+                    var scrollTop = $(window).scrollTop();
+                    target = target.length ? target : $('[name="' + this.hash.slice(1) + '"]');
                     if (target.length) {
-                        var target_pos = target.offset().top
-                        $('html,body').animate({scrollTop: target_pos + targetOffset}, Math.abs(target_pos - scrollTop) / 4)
+                        var target_pos = target.offset().top;
+                        $('html,body').animate({scrollTop: target_pos + targetOffset}, Math.abs(target_pos - scrollTop) / 4);
                         return false
                     }
                 }

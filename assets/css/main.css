@@ -261,6 +261,10 @@ footer ul > li > ul > li > a:hover {
     color: var(--secondary)
 }
 
+footer .social p strong {
+    font-weight: 600;
+}
+
 footer .social ul {
     display: block;
 }
