@@ -217,6 +217,10 @@ footer .address {
     margin-top: 30px;
 }
 
+footer .address a:hover {
+    color: var(--secondary)
+}
+
 footer ul {
     list-style: none;
     padding: 0;
@@ -258,8 +262,8 @@ footer ul > li > ul > li > a {
 }
 
 footer ul > li > ul > li > a:hover {
-    color: var(--secondary)
-}
+     color: var(--secondary)
+ }
 
 footer .social p strong {
     font-weight: 600;
@@ -350,7 +354,7 @@ footer .copy p {
 }
 
 .hero > .container {
-    padding: 180px 0 90px;
+    padding: 180px 15px 90px;
 }
 
 .hero h1 {
@@ -419,6 +423,12 @@ footer .copy p {
 
 #ankernav.fixed + #content {
     padding-top: 90px;
+}
+
+@media (max-width: 575px) {
+    #ankernav.fixed + #content {
+        padding: 60px 0 0;
+    }
 }
 
 /* Spacer */
